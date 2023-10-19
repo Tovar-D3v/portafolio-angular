@@ -1,6 +1,19 @@
-# WeatherApp
+# Portfolio with all Projects
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+
+Bringing my frontend skills to life, one line of code at a time.
+
+### "Every master was once a disaster" - T. Harv Eker
+
+######  -- Started on October 18, 2023
+
+**18th October -** Completed Angular & TS course and decided to work on this project.
+
+**19th October -** Initial Commits
+
+    Imported old portfolio files build using basic HTML & CSS.
+    Tried to build a WeatherApp. But stopped in between due to lot of UI design work.
 
 ## Development server
 
