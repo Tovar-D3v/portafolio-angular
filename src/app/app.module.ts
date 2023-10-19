@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { CalculatorAppComponent } from './calculator/calculator-app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { HomepageComponent } from './homepage/homepage.component';
-
+import { TabMenuModule } from 'primeng/tabmenu';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { HomepageComponent } from './homepage/homepage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TabMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

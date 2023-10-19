@@ -14,6 +14,8 @@ Bringing my frontend skills to life, one line of code at a time.
 
     Imported old portfolio files build using basic HTML & CSS.
     Tried to build a WeatherApp. But stopped in between due to lot of UI design work.
+    Divided portfolio into proper components.
+    Tried to routing but failed.
 
 ## Development server
 

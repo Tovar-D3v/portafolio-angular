@@ -9,26 +9,21 @@
                     <a href="/index.html" id="header"> Vishal's Portfolio </a>
                 </td>
                 <td style = "text-align: right; width: auto;">
-                    <a href = "/Sub Pages/LoginPage/Login.html" id = "Login_button"> Log in </a>
+                    <a id = "Login_button" (click)="onLoginClick()"> Log in </a>
                 </td>
             </tr>
         </table>
     </div>
 </header>
 
-<div>
-    <hr/>
-        <nav>
-            <ul>
-            <li><a routerLink= ""> Home </a></li>
-            <li><a routerLink="/about"> About </a></li>
-            <li><a routerLink="/contact"> Contact </a></li>
-            </ul>
-        </nav>
+<div class="card">
+    <p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>
+</div>
+
+<!-- <div>
         <table style = "width: 40%;">
             <th> <a href="/Sub Pages/EducationPage/Education.html" > Education </a> <br/> </th>
             <th> <a href="/Sub Pages/ExperiencePage/Experience.html" title = "Exp"> Experience  </a> <br/> </th>
             <th> <a href="/Sub Pages/Calculator/Calculator.html" title = "Other Projects"> Calculator  </a> <br/> </th>
         </table>
-    <hr/>
-</div>
+</div> -->
