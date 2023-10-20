@@ -21,6 +21,8 @@ Bringing my frontend skills to life, one line of code at a time.
 **20th October -** Routing
 
     Understood routing and implemented it in the webpage. But still whole page is reloading.
+    Learned routing and now page is not reloading while move between webpages.
+    Migrated Calculator project code from JS to Angular and TS.
 
 ## Development server
 

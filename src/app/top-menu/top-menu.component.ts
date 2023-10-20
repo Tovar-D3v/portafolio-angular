@@ -8,14 +8,16 @@ import { MenuItem } from 'primeng/api';
 })
 export class TopMenuComponent implements OnInit {
   items: MenuItem[] | undefined;
+  activeItem: MenuItem | undefined;
 
   ngOnInit() {
       this.items = [
           { label: 'Home', routerLink : '/'},
           { label: 'About', routerLink : "/asdlfk"},
-          { label: 'Experience', routerLink : "/asdlfk"},
-          { label: 'CalculatorApp', routerLink : "/calculator"},
-          { label: 'More', routerLink : "/asdfjl" }
+          { label: 'LinkedIn', url: "https://www.linkedin.com/in/vishaljece/"},
+          { label: 'GitHub', url: "https://github.com/thevishalj"},
+          { label: 'Calculator', routerLink : "/calculator"}
       ];
+      this.activeItem = this.items[0];
   }
 }

@@ -8,6 +8,7 @@ import { CalculatorAppComponent } from './calculator/calculator-app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TabMenuModule
+    TabMenuModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

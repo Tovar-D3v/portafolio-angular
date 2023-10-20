@@ -1,43 +1,43 @@
 <main>
     <div id = "Calculator-box">
         <div>
-            <input type = "text" class = "screen" id="my-input"/>
+            <input type = "text" class = "screen" id="my-input" [(ngModel)]="inputValue" />
         </div>
         <div id = "Keypad">
             <div> 
-                <button class = "button">AC</button>
-                <button class = "button">(</button>
-                <button class = "button">)</button>
-                <button class = "button">*</button>
-                <button class = "button">DEL</button>
+                <button class = "button" (click)="enteredData('AC')">AC</button>
+                <button class = "button" (click)="enteredData('(')">(</button>
+                <button class = "button" (click)="enteredData(')')">)</button>
+                <button class = "button" (click)="enteredData('*')">*</button>
+                <button class = "button" (click)="enteredData('DEL')">DEL</button>
             </div>
             <div> 
-                <button class = "button">%</button>
-                <button class = "button">7</button>
-                <button class = "button">8</button>
-                <button class = "button">9</button>
-                <button class = "button">/</button>
+                <button class = "button" (click)="enteredData('%')">%</button>
+                <button class = "button" (click)="enteredData('7')">7</button>
+                <button class = "button" (click)="enteredData('8')">8</button>
+                <button class = "button" (click)="enteredData('9')">9</button>
+                <button class = "button" (click)="enteredData('/')">/</button>
             </div>
             <div> 
-                <button class = "button">x<sup>2</sup></button>
-                <button class = "button">4</button>
-                <button class = "button">5</button>
-                <button class = "button">6</button>
-                <button class = "button">-</button>
+                <button class = "button" (click)="enteredData('square')" style = "font-size: 20px;">x<sup>2</sup></button>
+                <button class = "button" (click)="enteredData('4')">4</button>
+                <button class = "button" (click)="enteredData('5')">5</button>
+                <button class = "button" (click)="enteredData('6')">6</button>
+                <button class = "button" (click)="enteredData('-')">-</button>
             </div>
             <div> 
-                <button class = "button">1/x</button>
-                <button class = "button">1</button>
-                <button class = "button">2</button>
-                <button class = "button">3</button>
-                <button class = "button">+</button>
+                <button class = "button" (click)="enteredData('1/x')">1/x</button>
+                <button class = "button" (click)="enteredData('1')">1</button>
+                <button class = "button" (click)="enteredData('2')">2</button>
+                <button class = "button" (click)="enteredData('3')">3</button>
+                <button class = "button" (click)="enteredData('+')">+</button>
             </div>
             <div> 
-                <button class = "button"><sup>2</sup>&#8730;x</button>
-                <button class = "button">.</button>
-                <button class = "button">0</button>
-                <button class = "button">+/- </button>
-                <button class = "button" style = "background-color: rgb(199, 6, 199);">=</button>
+                <button class = "button" (click)="enteredData('root')" style = "font-size: 20px;"><sup>2</sup>&#8730;x</button>
+                <button class = "button" (click)="enteredData('.')">.</button>
+                <button class = "button" (click)="enteredData('0')">0</button>
+                <button class = "button" (click)="enteredData('+/-')">+/- </button>
+                <button class = "button" (click)="enteredData('=')" style = "background-color: rgb(199, 6, 199);">=</button>
             </div>
         </div>
     </div>
