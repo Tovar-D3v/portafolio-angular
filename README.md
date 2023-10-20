@@ -1,4 +1,4 @@
-# Portfolio with all Projects
+# My Digital Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
@@ -15,7 +15,12 @@ Bringing my frontend skills to life, one line of code at a time.
     Imported old portfolio files build using basic HTML & CSS.
     Tried to build a WeatherApp. But stopped in between due to lot of UI design work.
     Divided portfolio into proper components.
-    Tried to routing but failed.
+    Added TabMenu using PrimeNG.
+    Tried routing but failed.
+
+**20th October -** Routing
+
+    Understood routing and implemented it in the webpage. But still whole page is reloading.
 
 ## Development server
 
