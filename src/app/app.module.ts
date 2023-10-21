@@ -9,6 +9,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     TabMenuModule,
-    FormsModule
+    FormsModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

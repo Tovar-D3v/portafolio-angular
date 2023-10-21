@@ -24,6 +24,8 @@ Bringing my frontend skills to life, one line of code at a time.
     Learned routing and now page is not reloading while move between webpages.
     Migrated Calculator project code from JS to Angular and TS.
 
+**21st October -** Added a like button with a counter which is greyed out but blue if clicked.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
