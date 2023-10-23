@@ -1,3 +1,4 @@
+import { HomepageService } from './homepage.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,18 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
-  initialcount: number = 304958;     //we can get this data from database.
-  likesCount: number = this.initialcount;
-  buttonOn: boolean = false;
+
+  constructor(private homepageService: HomepageService){}
 
   counter(){
-    if(this.likesCount === this.initialcount)
-    {
-      this.buttonOn = true;
-      this.likesCount++
-    }else{
-      this.buttonOn = false;
-      this.likesCount--
-    }
+    this.homepageService.likescounter();
   }
+
+  get likesCount() {
+    return this.homepageService.getLikesCount();
+  }
+
+  get buttonStatus() {
+    return this.homepageService.getButtonStatus();
+  }
+
+/*We don't get updated value like this, it will fetch the original values not the updated one.
+  likesCount = this.homepageService.getLikesCount; */
 }

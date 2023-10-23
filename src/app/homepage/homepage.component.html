@@ -27,6 +27,6 @@
     <br><br>
     <div class="card flex justify-content-center">
         <!-- ngClass takes boolean value and apply a css class if true. -->
-        <p-button (click)="counter()" [ngClass]="{'greyed-out': !buttonOn}">Like ({{ likesCount }})</p-button>
+        <p-button (click)="counter()" [ngClass]="{'greyed-out': !buttonStatus}">Like ({{ likesCount }})</p-button>
     </div>
 </footer>

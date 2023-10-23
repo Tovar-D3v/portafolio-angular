@@ -26,6 +26,8 @@ Bringing my frontend skills to life, one line of code at a time.
 
 **21st October -** Added a like button with a counter which is greyed out but blue if clicked.
 
+**23st October -** Divided Like Button code in component and Service.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

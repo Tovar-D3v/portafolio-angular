@@ -10,6 +10,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
+import { HomepageService } from './homepage/homepage.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { ButtonModule } from 'primeng/button';
     FormsModule,
     ButtonModule
   ],
-  providers: [],
+  providers: [
+    HomepageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
