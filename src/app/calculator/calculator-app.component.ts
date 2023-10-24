@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CalculatorAppComponent {
 
   s : string = "";
-  inputValue: string = '';
+  inputValue: string = '0';
 
   enteredData(data: string){
     try {

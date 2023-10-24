@@ -15,6 +15,7 @@ export class HomepageComponent {
   }
 
   get likesCount() {
+    //likesCount() is not a method name but a property, we are getting it's value here.
     return this.homepageService.getLikesCount();
   }
 
@@ -22,6 +23,6 @@ export class HomepageComponent {
     return this.homepageService.getButtonStatus();
   }
 
-/*We don't get updated value like this, it will fetch the original values not the updated one.
+/*We don't get updated values like this, it will fetch the original values not the updated one.
   likesCount = this.homepageService.getLikesCount; */
 }
