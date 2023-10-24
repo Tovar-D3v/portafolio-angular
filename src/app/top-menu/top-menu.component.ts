@@ -13,7 +13,7 @@ export class TopMenuComponent implements OnInit {
   ngOnInit() {
       this.items = [
           { label: 'Home', routerLink : '/'},
-          { label: 'About', routerLink : "/asdlfk"},
+          { label: 'About', routerLink : "/about"},
           { label: 'LinkedIn', url: "https://www.linkedin.com/in/vishaljece/"},
           { label: 'GitHub', url: "https://github.com/thevishalj"},
           { label: 'Calculator', routerLink : "/calculator"}

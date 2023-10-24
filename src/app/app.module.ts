@@ -11,6 +11,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { HomepageService } from './homepage/homepage.service';
+import { AboutComponent } from './about/about.component';
+import { titleCase } from './about/titlecase.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomepageService } from './homepage/homepage.service';
     LoginComponent,
     CalculatorAppComponent,
     TopMenuComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutComponent,
+    titleCase
   ],
   imports: [
     BrowserModule,
