@@ -10,9 +10,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
-import { HomepageService } from './homepage/homepage.service';
 import { AboutComponent } from './about/about.component';
 import { titleCase } from './about/titlecase.pipe';
+import { LikeButtonComponent } from './like-button/like-button.component';
+import { LikeButtonService } from './like-button/like-button.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { titleCase } from './about/titlecase.pipe';
     TopMenuComponent,
     HomepageComponent,
     AboutComponent,
-    titleCase
+    titleCase,
+    LikeButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { titleCase } from './about/titlecase.pipe';
     ButtonModule
   ],
   providers: [
-    HomepageService
+    LikeButtonService
   ],
   bootstrap: [AppComponent]
 })

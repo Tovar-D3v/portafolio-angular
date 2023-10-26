@@ -28,7 +28,9 @@ Bringing my frontend skills to life, one line of code at a time.
 
 **23st October -** Divided Like Button code in component and Service.
 
-**23st October -** Added about subpage and created a custom Pipe.
+**24st October -** Added about subpage and created a custom Pipe.
+
+**26st October -** Added like button as sepereate component and made it reusable.
 
 ## Development server
 

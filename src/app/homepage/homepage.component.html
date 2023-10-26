@@ -25,8 +25,5 @@
     <h5> Home Page </h5>
     <small> Contact me at vishaljain.ece@gmail.com </small>
     <br><br>
-    <div class="card flex justify-content-center">
-        <!-- ngClass takes boolean value and apply a css class if true. -->
-        <p-button (click)="counter()" [ngClass]="{'greyed-out': !buttonStatus}">Like ({{ likesCount }})</p-button>
-    </div>
+    <app-like-button></app-like-button>
 </footer>
