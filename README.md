@@ -32,6 +32,8 @@ Bringing my frontend skills to life, one line of code at a time.
 
 **26st October -** Added like button as sepereate component and made it reusable.
 
+**28st October -** Experimented with Input & Output from a component.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

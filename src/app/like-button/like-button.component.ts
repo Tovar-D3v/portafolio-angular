@@ -1,22 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { LikeButtonService } from './like-button.service';
 
 @Component({
-  selector: 'app-like-button',
+  selector: 'like-button',
   templateUrl: './like-button.component.html',
   styleUrls: ['./like-button.component.css']
 })
 export class LikeButtonComponent {
-  GenerateLog: boolean = false; 
+  @Input('Print-logs') GenerateLog: boolean = false; 
+  @Output('change') change = new EventEmitter;
 
   constructor(private likeButtonService: LikeButtonService){}
 
   counter(){
-    this.likeButtonService.likescounter(); 
+    this.likeButtonService.likescounter();
+    this.change.emit();                      //this will emit that this method is called.
   }
 
   logInfo(){
-    if(this.GenerateLog == true){
+    if(this.GenerateLog === true){
       console.log("This page is liked by user")
     }
   }

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   title: string = '';
+
+  popUp(){
+    console.log("Popup is working")
+  }
 }
