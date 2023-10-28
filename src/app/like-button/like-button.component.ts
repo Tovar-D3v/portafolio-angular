@@ -7,11 +7,18 @@ import { LikeButtonService } from './like-button.service';
   styleUrls: ['./like-button.component.css']
 })
 export class LikeButtonComponent {
+  GenerateLog: boolean = false; 
 
   constructor(private likeButtonService: LikeButtonService){}
 
   counter(){
-    this.likeButtonService.likescounter();
+    this.likeButtonService.likescounter(); 
+  }
+
+  logInfo(){
+    if(this.GenerateLog == true){
+      console.log("This page is liked by user")
+    }
   }
 
   get likesCount() {
@@ -23,6 +30,6 @@ export class LikeButtonComponent {
     return this.likeButtonService.getButtonStatus();
   }
 
-/*We don't get updated values like this, it will fetch the original values not the updated one.
+  /*We don't get updated values like this, it will fetch the original values not the updated one.
   likesCount = this.homepageService.getLikesCount; */
 }

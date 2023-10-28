@@ -1,4 +1,3 @@
-import { HomepageService } from '../like-button/like-button.service';
 import { Component } from '@angular/core';
 
 @Component({
