@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   title: string = '';
 
-  popUp(){
+  popUp(){     // log message from like-component
     console.log("Popup is working")
   }
 }
