@@ -6,6 +6,14 @@ Bringing my frontend skills to life, one line of code at a time.
 
 ### "Every master was once a disaster" - T. Harv Eker
 
+## Setup Guide (Win)
+
+    1. Install Git
+    2. Install Node from web - Check using "node -v" and "npm -v"
+    3. Install Angular CLI - "npm install -g @angular/cli" - Check using "ng --version"
+    4. Run command "ng v"
+    5. Final check using - "ng serve"
+
 ######  -- Started on October 18, 2023
 
 **18th October -** Completed Angular & TS course and decided to work on this project.
