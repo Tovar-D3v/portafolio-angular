@@ -10,9 +10,10 @@ Bringing my frontend skills to life, one line of code at a time.
 
     1. Install Git
     2. Install Node from web - Check using "node -v" and "npm -v"
-    3. Install Angular CLI - "npm install -g @angular/cli" - Check using "ng --version"
+    3. Install Angular CLI - "npm install -g @angular/cli@16" - Check using "ng --version"
     4. Run command "ng v"
-    5. Final check using - "ng serve"
+    5. Install PrimeNG - "npm install primeng"
+    6. Final check using - "ng serve"
 
 ######  -- Started on October 18, 2023
 
