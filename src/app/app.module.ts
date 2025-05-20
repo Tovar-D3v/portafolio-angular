@@ -1,41 +1,37 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MenubarModule } from 'primeng/menubar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { CalculatorAppComponent } from './calculator/calculator-app.component';
-import { TopMenuComponent } from './top-menu/top-menu.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
-import { AboutComponent } from './about/about.component';
-import { titleCase } from './about/titlecase.pipe';
-import { LikeButtonComponent } from './like-button/like-button.component';
-import { LikeButtonService } from './like-button/like-button.service';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ContactComponent } from './components/contact/contact.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    CalculatorAppComponent,
-    TopMenuComponent,
-    HomepageComponent,
     AboutComponent,
-    titleCase,
-    LikeButtonComponent
+    ProjectsComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TabMenuModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    MenubarModule,
   ],
-  providers: [
-    LikeButtonService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
