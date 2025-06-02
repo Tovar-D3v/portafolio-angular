@@ -13,6 +13,12 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+import { BadgeModule } from 'primeng/badge';
+import { AvatarModule } from 'primeng/avatar';
+import { InputTextModule } from 'primeng/inputtext';
+import { RippleModule } from 'primeng/ripple';
+
+
 
 @NgModule({
   declarations: [
@@ -30,6 +36,11 @@ import { ContactComponent } from './components/contact/contact.component';
     FormsModule,
     ButtonModule,
     MenubarModule,
+    BadgeModule,
+    AvatarModule,
+    InputTextModule,
+    RippleModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
