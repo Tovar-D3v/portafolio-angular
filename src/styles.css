@@ -1,4 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+/* Puedes agregar estilos globales a este archivo e importar otros archivos de estilo */
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
-/* @import "bootstrap/dist/css/bootstrap.css" */
+/* @import "bootstrap/dist/css/bootstrap.css"; */
+
+/* Importamos tipografías (opcional: Google Fonts o local) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Variables CSS */
+:root {
+  --primary-color: #e91e63; /* Fucsia */
+  --text-color: #ffffff; /* Blanco */
+  --bg-color: #1e1e1e; /* Gris oscuro */
+}
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Forzamos que el alto de la ventana siempre cubra todo */
+html, body, app-root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility para centrar contenido vertical/horizontal */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scroll suave para anclas */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,46 +1,52 @@
+/* src/app/app.module.ts */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MenubarModule } from 'primeng/menubar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+/* --- COMPONENTES “CLÁSICOS” (no standalone) --- */
 import { AppComponent } from './app.component';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { FooterComponent } from './shared/footer/footer.component';
+
+/* --- MÓDULOS DE PrimeNG QUE NECESITAS PARA <p-toolbar>, <p-chip>, ETC. --- */
 import { ButtonModule } from 'primeng/button';
-import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { ContactComponent } from './components/contact/contact.component';
-
+import { CardModule } from 'primeng/card';
+import { ToolbarModule } from 'primeng/toolbar';
+import { MenubarModule } from 'primeng/menubar';
+import { PanelModule } from 'primeng/panel';
+import { DividerModule } from 'primeng/divider';
+import { ChipModule } from 'primeng/chip';
 import { BadgeModule } from 'primeng/badge';
-import { AvatarModule } from 'primeng/avatar';
-import { InputTextModule } from 'primeng/inputtext';
-import { RippleModule } from 'primeng/ripple';
-
-
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
+    /* Aquí van TODOS los componentes “no‐standalone” */
     AppComponent,
-    AboutComponent,
-    ProjectsComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    ContactComponent,
+    NavbarComponent,
+    HeroComponent,
+    ProyectosComponent,
+    TecnologiasComponent,
+    FooterComponent
   ],
   imports: [
+    /* Módulos de Angular */
     BrowserModule,
-    AppRoutingModule,
-    TabMenuModule,
-    FormsModule,
-    ButtonModule,
+    BrowserAnimationsModule,
+
+    /* Módulos de PrimeNG */
     MenubarModule,
+    ToolbarModule,
+    ButtonModule,
+    CardModule,
+    PanelModule,
+    DividerModule,
+    ChipModule,
     BadgeModule,
-    AvatarModule,
-    InputTextModule,
-    RippleModule
-    
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

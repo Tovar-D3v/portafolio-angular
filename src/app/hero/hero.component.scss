@@ -1,0 +1,29 @@
+/* src/app/hero/hero.component.scss */
+
+.hero-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding-top: 6rem; /* Para dejar espacio a la navbar fija */
+    padding-bottom: 2rem;
+    min-height: calc(100vh - 4rem);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-avatar {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #e91e63;
+  }
+  

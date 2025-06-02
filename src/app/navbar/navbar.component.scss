@@ -1,0 +1,27 @@
+/* src/app/navbar/navbar.component.scss */
+
+:host {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(5px);
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e91e63; /* fucsia */
+  }
+  
+  .navbar-button {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .navbar-button:hover {
+    color: #e91e63;
+  }
+  

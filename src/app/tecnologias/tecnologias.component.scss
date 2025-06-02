@@ -1,0 +1,26 @@
+/* src/app/tecnologias/tecnologias.component.scss */
+
+.tecnologias-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e91e63;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .chip-tecnologia {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #e91e63;
+    font-weight: 500;
+  }
+  
+  .chip-tecnologia .p-chip-icon {
+    margin-right: 0.5rem;
+  }
+  
