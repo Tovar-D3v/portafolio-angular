@@ -23,11 +23,11 @@
                 styleClass="carousel-proyecto"
               >
                 <ng-template pTemplate="item" let-img>
-                  <div class="carousel-item">
+                  <div class="carousel-item" style="border-radius: .7rem;">
                     <img
                       [src]="img"
                       alt="{{ p.titulo }}"
-                      style="width: 100%; display: block;"
+                      style="width: 100%; display: block; border-radius: .7rem;"
                     />
                   </div>
                 </ng-template>
@@ -43,8 +43,8 @@
                 *ngIf="p.enlace"
                 pButton
                 label="Ver más"
-                icon="pi pi-external-link"
                 [routerLink]="p.enlace"
+                class="button"
               ></button>
             </ng-template>
           </p-card>

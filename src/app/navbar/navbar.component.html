@@ -9,7 +9,6 @@
       <div class="p-toolbar-group-right p-mr-4">
         <button *ngFor="let item of items" pButton type="button" class="p-button-text p-button-lg p-mx-2 navbar-button"
           (click)="item.command()">
-          <i [ngClass]="item.icon" class="p-mr-2"></i>
           {{ item.label }}
         </button>
       </div>

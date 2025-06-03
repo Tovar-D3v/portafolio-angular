@@ -20,26 +20,26 @@ export class ProyectosComponent implements OnInit {
   ngOnInit(): void {
     this.proyectos = [
       {
-        titulo: 'Proyecto CRM Empresarial',
+        titulo: 'CRM Empresarial',
         subtitulo: 'Gestión integral de clientes y proyectos.',
         descripcion:
           'Chronos es una aplicación diseñada para optimizar la gestión de clientes y proyectos en Indelpa S.A.S., permitiendo un control eficiente de los negocios en distintas etapas. La plataforma facilita la creación, edición y seguimiento de clientes, así como la gestión visual de negocios a través de un sistema de columnas que organiza proyectos en nuevas, propuestas, asignadas, finalizadas o perdidas. Además, incluye un dashboard interactivo que muestra el estado financiero de los proyectos (pendientes, finalizados y no iniciados) y una tabla de seguimiento con fechas de entrega. También permite la gestión de operarios en planta, registrando su desempeño mediante filtros de fecha que calculan porcentaje de productividad y kilos procesados, junto con los días trabajados. Chronos integra herramientas para administrar empresas, asignar clientes, crear sedes y gestionar reuniones y llamadas, proporcionando una solución completa para la gestión empresarial.',
         imagenes: [
-          'assets/proyecto-crm-1.jpg',
-          'assets/proyecto-crm-2.jpg',
-          'assets/proyecto-crm-3.jpg'
+          'assets/crm/crm1.png',
+          'assets/crm/crm2.png',
+          'assets/crm/crm3.png',
         ],
         enlace: '#',
       },
       {
-        titulo: 'Dashboard de Inventarios',
+        titulo: 'ChronosQuote',
         subtitulo: 'Sistema inteligente de cotizaciones e inventarios.',
         descripcion:
           'ChronosQuote es una solución desarrollada para optimizar y agilizar el proceso de cotización y gestión de inventarios en Indelpa S.A.S., eliminando la dependencia de hojas de cálculo y mejorando la eficiencia del equipo de ventas. Cuenta con un dashboard dinámico y un tablero Kanban para visualizar y gestionar negocios, permitiendo la generación rápida de cotizaciones y facturas en PDF. Su sistema inteligente de tags evita la duplicación de procesos al autocompletar información de tableros eléctricos previamente cotizados. Además, incorpora WebSockets para sincronizar en tiempo real los cambios en inventarios y negocios, asegurando que cada actualización sea reflejada instantáneamente en las cotizaciones. Con una arquitectura robusta basada en Java Spring Boot, React, RabbitMQ y Docker, ChronosQuote mejora la precisión en la gestión de costos y facilita el trabajo colaborativo entre los cotizadores mediante un sistema adaptable a cada usuario logueado.',
         imagenes: [
-          'assets/proyecto-inventario-1.jpg',
-          'assets/proyecto-inventario-2.jpg',
-          'assets/proyecto-inventario-3.jpg'
+          'assets/cotizaciones/cotizaciones1.png',
+          'assets/cotizaciones/cotizaciones2.png',
+          'assets/cotizaciones/cotizaciones3.png'
         ],
         enlace: '#',
       },

@@ -1,4 +1,3 @@
-/* src/app/navbar/navbar.component.ts */
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   items = [
-    { label: 'Sobre Mi', icon: 'pi pi-user', command: () => this.scrollTo('hero') },
-    { label: 'Proyectos', icon: 'pi pi-briefcase', command: () => this.scrollTo('proyectos') },
-    { label: 'Tecnologías', icon: 'pi pi-cog', command: () => this.scrollTo('tecnologias') }
+    { label: 'Sobre Mi', command: () => this.scrollTo('hero') },
+    { label: 'Proyectos', command: () => this.scrollTo('proyectos') },
+    { label: 'Tecnologías', command: () => this.scrollTo('tecnologias') },
   ];
 
   scrollTo(id: string) {

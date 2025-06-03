@@ -16,6 +16,9 @@ import { ChipModule } from 'primeng/chip';
 import { BadgeModule } from 'primeng/badge';
 import { TooltipModule } from 'primeng/tooltip';
 
+/* Importa AnimateOnScrollModule desde PrimeNG */
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+
 /* Lucide Angular: importar el módulo y los iconos que usarás */
 import { LucideAngularModule } from 'lucide-angular';
 import {
@@ -70,7 +73,9 @@ const routes: Routes = [
     BadgeModule,
     TooltipModule,
 
-    /* LucideAngularModule: registramos SOLO los iconos que necesitamos */
+    /* AnimateOnScrollModule para animaciones al hacer scroll */
+    AnimateOnScrollModule,
+
     LucideAngularModule.pick({
       Code,
       Smartphone,

@@ -2,12 +2,6 @@
   position: relative;
   display: grid;
   align-items: start;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0px auto 1fr;
-  grid-template-areas:
-    "blocker blocker"
-    "newest categories"
-    "newest popular";
   padding-top: 32px;
   margin-top: -64px;
   gap: 64px 96px;
@@ -21,7 +15,6 @@
 }
 
 .contenedor-proyectos {
-  grid-area: newest;
   margin-top: -96px;
   margin-bottom: 5rem;
 }
@@ -93,4 +86,34 @@
 .proyecto-subtitulo {
   vertical-align: inherit;
   color: #cccc;
+}
+
+
+.button {
+  background: #809fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #000;
+}
+
+.p-carousel-indicator {
+  color: #e3e6e8;
+  text-decoration: none;
+}
+
+.p-carousel-indicator-button {
+  background: #809fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #000;
+}
+
+.p-carousel-next-button {
+  background: #809fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #000;
 }
