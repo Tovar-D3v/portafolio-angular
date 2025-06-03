@@ -4,18 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
-/* Importar CarouselModule de PrimeNG */
+/* PrimeNG Modules */
 import { CarouselModule } from 'primeng/carousel';
-
-/* --- COMPONENTES “CLÁSICOS” (no standalone) --- */
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './hero/hero.component';
-import { ProyectosComponent } from './proyectos/proyectos.component';
-import { TecnologiasComponent } from './tecnologias/tecnologias.component';
-import { FooterComponent } from './shared/footer/footer.component';
-
-/* --- MÓDULOS DE PrimeNG QUE NECESITAS PARA <p-toolbar>, <p-chip>, ETC. --- */
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ToolbarModule } from 'primeng/toolbar';
@@ -25,6 +15,25 @@ import { DividerModule } from 'primeng/divider';
 import { ChipModule } from 'primeng/chip';
 import { BadgeModule } from 'primeng/badge';
 import { TooltipModule } from 'primeng/tooltip';
+
+/* Lucide Angular: importar el módulo y los iconos que usarás */
+import { LucideAngularModule } from 'lucide-angular';
+import {
+  Code,
+  Smartphone,
+  Database,
+  Server,
+  Github,
+  Cloud
+} from 'lucide-angular';
+
+/* Componentes de tu aplicación */
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: HeroComponent },
@@ -46,13 +55,11 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
 
-    /* Registrar rutas directamente en AppModule */
+    /* Rutas */
     RouterModule.forRoot(routes),
 
-    /* CarouselModule agregado aquí */
+    /* PrimeNG */
     CarouselModule,
-
-    /* Módulos de PrimeNG */
     MenubarModule,
     ToolbarModule,
     ButtonModule,
@@ -61,9 +68,19 @@ const routes: Routes = [
     DividerModule,
     ChipModule,
     BadgeModule,
-    TooltipModule
+    TooltipModule,
+
+    /* LucideAngularModule: registramos SOLO los iconos que necesitamos */
+    LucideAngularModule.pick({
+      Code,
+      Smartphone,
+      Database,
+      Server,
+      Github,
+      Cloud
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
