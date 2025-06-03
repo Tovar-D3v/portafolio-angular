@@ -1,17 +1,11 @@
 <!-- src/app/tecnologias/tecnologias.component.html -->
-<section id="tecnologias" class="tecnologias-container p-px-4 p-py-8">
-    <h2 class="section-title">Tecnologías con las que trabajo</h2>
-    <div class="p-d-flex p-flex-wrap p-jc-center p-ai-center">
-      <div
-        *ngFor="let tech of tecnologias"
-        class="p-m-2"
-      >
-        <p-chip
-          [label]="tech.nombre"
-          [icon]="tech.icono"
-          styleClass="chip-tecnologia"
-        ></p-chip>
+<section id="tecnologias" class="grid cabezera-contenedor">
+  <h2 class="subtitulo">Tecnologías con las que trabajo</h2>
+  <div class="wgvwonx">
+    <article class="w124ae9d">
+      <div *ngFor="let tech of tecnologias" class="p-m-2">
+        <p-chip [label]="tech.nombre" [icon]="tech.icono" styleClass="chip-tecnologia"></p-chip>
       </div>
-    </div>
-  </section>
-  
+    </article>
+  </div>
+</section>

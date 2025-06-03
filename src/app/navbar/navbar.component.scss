@@ -1,27 +1,51 @@
 /* src/app/navbar/navbar.component.scss */
 
 :host {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(30, 30, 30, 0.85);
-    backdrop-filter: blur(5px);
-  }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #e91e63; /* fucsia */
-  }
-  
-  .navbar-button {
-    color: #ffffff;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  
-  .navbar-button:hover {
-    color: #e91e63;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #0d0f12;
+  backdrop-filter: blur(5px);
+}
+
+.cabezera-contenedor {
+  width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+.contenedor-header, .header {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-header {
+  height: 5rem;
+}
+
+
+.header {
+  justify-content: space-between;
+  height: 3rem;
+  flex: 1 1 0%;
+  gap: 3rem;
+}
+
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e91e63; /* fucsia */
+}
+
+.navbar-button {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-button:hover {
+  color: #e91e63;
+}

@@ -1,26 +1,74 @@
-/* src/app/tecnologias/tecnologias.component.scss */
+.grid {
+  position: relative;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0px auto 1fr;
+  grid-template-areas:
+    "blocker blocker"
+    "newest categories"
+    "newest popular";
+  padding-top: 32px;
+  padding-bottom: 96px;
+  margin-top: -64px;
+  gap: 64px 96px;
+}
+
+.cabezera-contenedor {
+  width: 100%;
+  max-width: 69rem;
+  margin-inline: auto;
+  padding-inline: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #ff1981;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.wgvwonx {
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 96px;
+  gap: 48px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.w124ae9d {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
 
 .tecnologias-container {
-    background-color: #1e1e1e;
-    color: #ffffff;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #e91e63;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .chip-tecnologia {
-    background-color: #333333;
-    color: #ffffff;
-    border: 1px solid #e91e63;
-    font-weight: 500;
-  }
-  
-  .chip-tecnologia .p-chip-icon {
-    margin-right: 0.5rem;
-  }
-  
+  background-color: #0d0f12;
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e91e63;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.chip-tecnologia {
+  background-color: #0d0f12;
+  color: #ffffff;
+  border: 1px solid #e91e63;
+  font-weight: 500;
+}
+
+.chip-tecnologia .p-chip-icon {
+  margin-right: 0.5rem;
+}

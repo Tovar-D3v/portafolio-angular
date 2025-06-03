@@ -1,1 +1,57 @@
-<p>proyectos works!</p>
+<!-- src/app/proyectos/proyectos.component.html -->
+<section id="proyectos" class="grid cabezera-contenedor">
+  <section class="contenedor-proyectos">
+    <h2 class="subtitulo">Proyectos</h2>
+    <div class="wgvwonx">
+      <article class="w124ae9d">
+        <div *ngFor="let p of proyectos" class=" proyecto">
+          <p-card
+            styleClass="card-proyecto"
+            [style]="{ background: 'transparent', border: 'none', 'box-shadow': 'none', 'padding': '0' }"
+          >
+            <ng-template pTemplate="header">
+              <div class="card-header-texto">
+                <h3 class="proyecto-titulo">{{ p.titulo }}</h3>
+                <h4 class="proyecto-subtitulo">{{ p.subtitulo }}</h4>
+              </div>
+              <p-carousel
+                [value]="p.imagenes"
+                [numVisible]="1"
+                [numScroll]="1"
+                circular="true"
+                autoplayInterval="4000"
+                styleClass="carousel-proyecto"
+              >
+                <ng-template pTemplate="item" let-img>
+                  <div class="carousel-item">
+                    <img
+                      [src]="img"
+                      alt="{{ p.titulo }}"
+                      style="width: 100%; display: block;"
+                    />
+                  </div>
+                </ng-template>
+              </p-carousel>
+            </ng-template>
+
+            <ng-template pTemplate="content" class="card-content">
+              <p class="descripcion">{{ p.descripcion }}</p>
+            </ng-template>
+
+            <ng-template pTemplate="footer">
+              <button
+                *ngIf="p.enlace"
+                pButton
+                label="Ver más"
+                icon="pi pi-external-link"
+                [routerLink]="p.enlace"
+              ></button>
+            </ng-template>
+          </p-card>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="p-d-flex p-flex-wrap p-jc-center p-ai-stretch"></div>
+</section>

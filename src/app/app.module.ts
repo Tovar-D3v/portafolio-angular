@@ -2,6 +2,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+
+/* Importar CarouselModule de PrimeNG */
+import { CarouselModule } from 'primeng/carousel';
 
 /* --- COMPONENTES “CLÁSICOS” (no standalone) --- */
 import { AppComponent } from './app.component';
@@ -22,9 +26,15 @@ import { ChipModule } from 'primeng/chip';
 import { BadgeModule } from 'primeng/badge';
 import { TooltipModule } from 'primeng/tooltip';
 
+const routes: Routes = [
+  { path: '', component: HeroComponent },
+  { path: 'proyectos', component: ProyectosComponent },
+  { path: 'tecnologias', component: TecnologiasComponent },
+  { path: '**', redirectTo: '' }
+];
+
 @NgModule({
   declarations: [
-    /* Aquí van TODOS los componentes “no‐standalone” */
     AppComponent,
     NavbarComponent,
     HeroComponent,
@@ -33,9 +43,14 @@ import { TooltipModule } from 'primeng/tooltip';
     FooterComponent
   ],
   imports: [
-    /* Módulos de Angular */
     BrowserModule,
     BrowserAnimationsModule,
+
+    /* Registrar rutas directamente en AppModule */
+    RouterModule.forRoot(routes),
+
+    /* CarouselModule agregado aquí */
+    CarouselModule,
 
     /* Módulos de PrimeNG */
     MenubarModule,
