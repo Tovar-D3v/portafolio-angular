@@ -49,9 +49,21 @@ export class ProyectosComponent implements OnInit {
         descripcion:
           'Chronos fue el primer proyecto desarrollado para Indelpa S.A.S., diseñado para medir y gestionar el tiempo de trabajo de los operarios en cada proceso productivo. Su complejidad radica en la estructura de procesos y subprocesos, donde algunas tareas pueden involucrar un solo operador con ayudantes, mientras que otras requieren múltiples operarios trabajando en conjunto. La aplicación permite visualizar en qué etapa se encuentra cada proyecto, generar reprocesos y asignar tareas de manera eficiente. Además, facilita la generación de informes en PDF y Excel, incluyendo fichas técnicas y un consolidado que optimiza la planificación y distribución del trabajo para diseñadores y programadores eléctricos. Desarrollado con Django, ChronosTime proporciona una solución precisa y adaptable para mejorar la gestión del tiempo y la productividad en la empresa.',
         imagenes: [
-          'assets/proyecto-reactivo-1.jpg',
-          'assets/proyecto-reactivo-2.jpg',
-          'assets/proyecto-reactivo-3.jpg'
+          'assets/chronos/chronos1.png',
+          'assets/chronos/chronos2.png',
+          'assets/chronos/chronos3.png'
+        ],
+        enlace: '#',
+      },
+      {
+        titulo: 'DesliAlert',
+        subtitulo: 'Monitoreo inteligente de deslizamientos en Risaralda usando imágenes satelitales.',
+        descripcion:
+          'DesliAlert es una plataforma web que utiliza inteligencia artificial para detectar zonas de posible deslizamiento en el departamento de Risaralda, Colombia. A partir de imágenes satelitales del programa Copernicus, nuestro sistema analiza de forma automatizada distintos sectores geográficos y señala, mediante cuadrantes visuales en el mapa, las áreas con mayor probabilidad de deslizamientos. Esta herramienta permite a autoridades, comunidades y entes de gestión del riesgo anticiparse a eventos geológicos, mejorar la planificación territorial y tomar decisiones informadas con base en datos satelitales actualizados.',
+        imagenes: [
+          'assets/deslizamientos/deslizamientos1.png',
+          'assets/deslizamientos/deslizamientos2.png',
+          'assets/deslizamientos/deslizamientos3.png'
         ],
         enlace: '#',
       },
